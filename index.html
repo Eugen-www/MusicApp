@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Beatmaker</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="control-panel">
+          <div class="play-stop__btn">
+            <div class="play-stop__btn-img">
+              <img src="img/play.svg" alt="" />
+            </div>
+          </div>
+          <div class="bpm__btn">
+            <span>BPM</span>
+            <div class="bpm__change-area">
+              <div class="bpm__change-input">
+                <input
+                  type="range"
+                  class="bpm__range"
+                  min="50"
+                  max="240"
+                  value="120"
+                />
+              </div>
+              <div class="bpm__change-text">120</div>
+            </div>
+          </div>
+          <div class="clear__btn">
+            <span>Clear</span>
+          </div>
+        </div>
+        <div class="beats">
+          <div class="row clap-row">
+            <div
+              class="main-pad clap-row__main-pad"
+              data-sound="Clap"
+              data-anotherSound="false"
+            >
+              <div class="clap-row__img">
+                <img src="img/clap.svg" alt="clap" />
+              </div>
+            </div>
+            <div class="pads clap-row__pads">
+              <div data-pudNumber="0" class="pad clap-row__pad"></div>
+              <div data-pudNumber="1" class="pad clap-row__pad"></div>
+              <div data-pudNumber="2" class="pad clap-row__pad"></div>
+              <div data-pudNumber="3" class="pad clap-row__pad"></div>
+              <div data-pudNumber="4" class="pad clap-row__pad"></div>
+              <div data-pudNumber="5" class="pad clap-row__pad"></div>
+              <div data-pudNumber="6" class="pad clap-row__pad"></div>
+              <div data-pudNumber="7" class="pad clap-row__pad"></div>
+              <div data-pudNumber="8" class="pad clap-row__pad"></div>
+              <div data-pudNumber="9" class="pad clap-row__pad"></div>
+              <div data-pudNumber="10" class="pad clap-row__pad"></div>
+              <div data-pudNumber="11" class="pad clap-row__pad"></div>
+              <div data-pudNumber="12" class="pad clap-row__pad"></div>
+              <div data-pudNumber="13" class="pad clap-row__pad"></div>
+            </div>
+          </div>
+          <div class="row cowbell-row">
+            <div
+              class="main-pad cowbell-row__main-pad"
+              data-sound="Cowbell"
+              data-anotherSound="false"
+            >
+              <div class="cowbell-row__img">
+                <img src="img/cowbell.svg" alt="cowbell" />
+              </div>
+            </div>
+            <div class="pads cowbell-row__pads">
+              <div data-pudNumber="0" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="1" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="2" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="3" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="4" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="5" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="6" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="7" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="8" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="9" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="10" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="11" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="12" class="pad cowbell-row__pad"></div>
+              <div data-pudNumber="13" class="pad cowbell-row__pad"></div>
+            </div>
+          </div>
+          <div class="row hihat-row">
+            <div
+              class="main-pad hihat-row__main-pad"
+              data-sound="Hihat"
+              data-anotherSound="true"
+            >
+              <div class="hihat-row__img">
+                <img src="img/hihat.svg" alt="hihat" />
+              </div>
+            </div>
+            <div class="pads hihat-row__pads">
+              <div data-pudNumber="0" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="1" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="2" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="3" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="4" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="5" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="6" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="7" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="8" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="9" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="10" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="11" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="12" class="pad hihat-row__pad"></div>
+              <div data-pudNumber="13" class="pad hihat-row__pad"></div>
+            </div>
+          </div>
+          <div class="row kick-row">
+            <div
+              class="main-pad kick-row__main-pad"
+              data-sound="Kick"
+              data-anotherSound="true"
+            >
+              <div class="kick-row__img">
+                <img src="img/kick.svg" alt="kick" />
+              </div>
+            </div>
+            <div class="pads kick-row__pads">
+              <div data-pudNumber="0" class="pad kick-row__pad"></div>
+              <div data-pudNumber="1" class="pad kick-row__pad"></div>
+              <div data-pudNumber="2" class="pad kick-row__pad"></div>
+              <div data-pudNumber="3" class="pad kick-row__pad"></div>
+              <div data-pudNumber="4" class="pad kick-row__pad"></div>
+              <div data-pudNumber="5" class="pad kick-row__pad"></div>
+              <div data-pudNumber="6" class="pad kick-row__pad"></div>
+              <div data-pudNumber="7" class="pad kick-row__pad"></div>
+              <div data-pudNumber="8" class="pad kick-row__pad"></div>
+              <div data-pudNumber="9" class="pad kick-row__pad"></div>
+              <div data-pudNumber="10" class="pad kick-row__pad"></div>
+              <div data-pudNumber="11" class="pad kick-row__pad"></div>
+              <div data-pudNumber="12" class="pad kick-row__pad"></div>
+              <div data-pudNumber="13" class="pad kick-row__pad"></div>
+            </div>
+          </div>
+          <div class="row openhat-row">
+            <div
+              class="main-pad openhat-row__main-pad"
+              data-sound="Openhat"
+              data-anotherSound="true"
+            >
+              <div class="openhat-row__img">
+                <img src="img/openhat.svg" alt="openhat" />
+              </div>
+            </div>
+            <div class="pads openhat-row__pads">
+              <div data-pudNumber="0" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="1" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="2" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="3" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="4" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="5" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="6" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="7" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="8" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="9" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="10" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="11" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="12" class="pad openhat-row__pad"></div>
+              <div data-pudNumber="13" class="pad openhat-row__pad"></div>
+            </div>
+          </div>
+          <div class="row shaker-row">
+            <div
+              class="main-pad shaker-row__main-pad"
+              data-sound="Shaker"
+              data-anotherSound="false"
+            >
+              <div class="shaker-row__img">
+                <img src="img/shaker.svg" alt="shaker" />
+              </div>
+            </div>
+            <div class="pads shaker-row__pads">
+              <div data-pudNumber="0" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="1" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="2" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="3" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="4" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="5" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="6" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="7" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="8" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="9" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="10" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="11" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="12" class="pad shaker-row__pad"></div>
+              <div data-pudNumber="13" class="pad shaker-row__pad"></div>
+            </div>
+          </div>
+          <div class="row snare-row">
+            <div
+              class="main-pad snare-row__main-pad"
+              data-sound="Snare"
+              data-anotherSound="true"
+            >
+              <div class="snare-row__img">
+                <img src="img/snare.svg" alt="snare" />
+              </div>
+            </div>
+            <div class="pads snare-row__pads">
+              <div data-pudNumber="0" class="pad snare-row__pad"></div>
+              <div data-pudNumber="1" class="pad snare-row__pad"></div>
+              <div data-pudNumber="2" class="pad snare-row__pad"></div>
+              <div data-pudNumber="3" class="pad snare-row__pad"></div>
+              <div data-pudNumber="4" class="pad snare-row__pad"></div>
+              <div data-pudNumber="5" class="pad snare-row__pad"></div>
+              <div data-pudNumber="6" class="pad snare-row__pad"></div>
+              <div data-pudNumber="7" class="pad snare-row__pad"></div>
+              <div data-pudNumber="8" class="pad snare-row__pad"></div>
+              <div data-pudNumber="9" class="pad snare-row__pad"></div>
+              <div data-pudNumber="10" class="pad snare-row__pad"></div>
+              <div data-pudNumber="11" class="pad snare-row__pad"></div>
+              <div data-pudNumber="12" class="pad snare-row__pad"></div>
+              <div data-pudNumber="13" class="pad snare-row__pad"></div>
+            </div>
+          </div>
+          <div class="row tom-row">
+            <div
+              class="main-pad tom-row__main-pad"
+              data-sound="Tom"
+              data-anotherSound="true"
+            >
+              <div class="tom-row__img">
+                <img src="img/tom.svg" alt="tom" />
+              </div>
+            </div>
+            <div class="pads tom-row__pads">
+              <div data-pudNumber="0" class="pad tom-row__pad"></div>
+              <div data-pudNumber="1" class="pad tom-row__pad"></div>
+              <div data-pudNumber="2" class="pad tom-row__pad"></div>
+              <div data-pudNumber="3" class="pad tom-row__pad"></div>
+              <div data-pudNumber="4" class="pad tom-row__pad"></div>
+              <div data-pudNumber="5" class="pad tom-row__pad"></div>
+              <div data-pudNumber="6" class="pad tom-row__pad"></div>
+              <div data-pudNumber="7" class="pad tom-row__pad"></div>
+              <div data-pudNumber="8" class="pad tom-row__pad"></div>
+              <div data-pudNumber="9" class="pad tom-row__pad"></div>
+              <div data-pudNumber="10" class="pad tom-row__pad"></div>
+              <div data-pudNumber="11" class="pad tom-row__pad"></div>
+              <div data-pudNumber="12" class="pad tom-row__pad"></div>
+              <div data-pudNumber="13" class="pad tom-row__pad"></div>
+            </div>
+          </div>
+        </div>
+        <div class="sound-popup">
+          <div class="sound-popup__container">
+            <div class="sound-popup__beat-name"></div>
+            <div class="sound-popup__beats">
+              <div class="sound-popup__beat" data-typeOfSound="808">808</div>
+              <div class="sound-popup__beat" data-typeOfSound="acoustic">
+                acoustic
+              </div>
+              <div class="sound-popup__beat" data-typeOfSound="analog">
+                analog
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio class="clap-sound" src="sounds/clap-808.wav"></audio>
+    <audio class="cowbell-sound" src="sounds/cowbell-808.wav"></audio>
+    <audio class="hihat-sound" src="sounds/hihat-808.wav"></audio>
+    <audio class="kick-sound" src="sounds/kick-808.wav"></audio>
+    <audio class="openhat-sound" src="sounds/openhat-808.wav"></audio>
+    <audio class="shaker-sound" src="sounds/shaker-analog.wav"></audio>
+    <audio class="snare-sound" src="sounds/snare-808.wav"></audio>
+    <audio class="tom-sound" src="sounds/tom-808.wav"></audio>
+    <script src="./app.js"></script>
+  </body>
+</html>
